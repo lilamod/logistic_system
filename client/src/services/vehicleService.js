@@ -42,3 +42,14 @@ export const deleteVehicle = async (id) => {
   const res = await fetch(`${API_URL}/delete/${id}`, { method: "POST" });
   return res.json();
 };
+
+
+// Search Vehicle
+export const searchVehicle = async (data) => {
+  const res = await fetch(`${API_URL}/search`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  });
+  return res.json();
+}

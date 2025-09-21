@@ -8,5 +8,6 @@ router.post('/list', vehicle.listVehicle);
 router.put('/update/:id', vehicle.updateVehicle);
 router.post('/delete/:id', vehicle.deleteVehicle);
 router.post('/dropdown-list', vehicle.dropdownList);
+router.post('/search', vehicle.listAvailableVehicles)
 
 module.exports = router;
